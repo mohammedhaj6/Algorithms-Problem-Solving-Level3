@@ -43,6 +43,6 @@ int main()
     FillMatrixWithRandomNumbers(arr, 3, 3);
     cout << "\n The following is a 3x3 random matrix:\n";
     PrintMatrix(arr, 3, 3);
-    system("pause>0");
+   
 }
 
