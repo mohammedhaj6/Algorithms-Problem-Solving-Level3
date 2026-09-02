@@ -13,22 +13,22 @@ int randomNumber(int from, int to)
     int randNum = rand() % (to - from + 1) + from;
     return randNum;
 }
-void FillMatrixWithRandomNumbers(int arr[3][3], short Rows, short
-    Cols)
+void FillMatrixWithRandomNumbers(int arr[3][3], short rows, short
+    cols)
 {
-    for (short i = 0; i < Rows; i++)
+    for (short i = 0; i < rows; i++)
     {
-        for (short j = 0; j < Cols; j++)
+        for (short j = 0; j < cols; j++)
         {
             arr[i][j] = randomNumber(1, 100);
         }
     }
 }
-void PrintMatrix(int arr[3][3], short Rows, short Cols)
+void PrintMatrix(int arr[3][3], short rows, short cols)
 {
-    for (short i = 0; i < Rows; i++)
+    for (short i = 0; i < rows; i++)
     {
-        for (short j = 0; j < Cols; j++)
+        for (short j = 0; j < cols; j++)
         {
             cout << setw(3) << arr[i][j] << "   ";
         }
